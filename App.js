@@ -20,48 +20,96 @@ import { TouchableHighlight } from 'react-native-web';
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
-
+      {/* search bar */}
       <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 15 }}>
-        <View style={{ flexDirection: 'row', marginHorizontal: 253, width: 23, height: 23, marginTop: 12 }}>
-          <Image source={require('./icon/Mask_group.png')}></Image>
+        <View style={{ marginLeft: 5, marginTop: 20 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderRightWidth: 100, borderColor: 'white' }}>
+              <Text style={{}}></Text>
+            </View>
+            <TouchableOpacity style={{ flex: 1, backgroundColor: 'blue', alignItems: 'center', justifyContent: 'center', borderBottomLeftRadius: 15, borderTopLeftRadius: 15 }}>
+              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#516BEB', color: 'white' }}>Kembali</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-        {/* Bahasa ^ */}
-        <View style={{ flexDirection: 'row', width: 426, height: 74, marginHorizontal: 15 }}>
-          <Image source={require('./icon/Background1.png')}></Image>
+        <View style={{ flexDirection: 'row', marginBottom: 5 }}>
+          <View style={{ flex: 1 }}>
+            <View style={{ backgroundColor: '#516BEB', paddingVertical: 7, borderwith: 1, height: 55, width: 150, marginRight: 10, borderBottomRightRadius: 15, borderTopRightRadius: 15 }}>
+              <Text style={{ marginLeft: 40, fontSize: 25, fontWeight: 'bold', color: 'white' }}>Training</Text>
+            </View>
+          </View>
         </View>
-        <View style={{ flexDirection: 'row' }}>
-          <Image source={require('./icon/Background.png')}></Image>
+        {/* Program Pelatihan */}
+        <View style={{ marginLeft: 16 }}>
+          <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Program Pelatihan</Text>
         </View>
-        {/* Bacgkround ^ */}
+        {/* Area tema pelatihan */}
+        <View style={{ flexDirection: 'row', marginTop: 20 }}>
+          <View style={{ flex: 1, backgroundColor: '#516BEB', marginHorizontal: 15, borderRadius: 15, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 15, color: 'white' }}>Tema Pelatihan</Text>
+            <Text style={{ fontSize: 20, color: 'white' }}>Sosialisasi KP</Text>
+          </View>
+        </View>
+        {/* buat area pengisi materi */}
+        <View style={{ marginHorizontal: 17, marginTop: 8 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: 'white', borderTopLeftRadius: 4, borderTopRightRadius: 4, padding: 14, marginHorizontal: 12 }}>
+            {/* logo gopay */}
+            <View style={{ backgroundColor: '#FFE6AB', alignContent: 'center', alignItems: 'center', borderRadius: 10, borderLeftWidth: 15, borderRightWidth: 15, borderColor: '#FFE6AB' }}>
+              <Text style={{ marginBottom: 14, }}>Pengisi Materi</Text>
+              <Text>Mr Kasno</Text>
+            </View>
+            <View style={{ backgroundColor: '#FFE6AB', paddingHorizontal: 5, alignContent: 'center', alignItems: 'center', borderRadius: 10, borderLeftWidth: 15, borderRightWidth: 15, borderColor: '#FFE6AB' }}>
+              <Text style={{ marginBottom: 14 }}>Waktu Pelatihan</Text>
+              <Text>9 Maret 2022</Text>
+            </View>
+          </View>
+        </View>
       </View>
-      <View style={{ flexDirection: 'row', marginBottom: 150 }}>
+      {/* Bagian Button */}
+      <View style={{ flexDirection: 'row', marginBottom: 260 }}>
+        <View style={{ flex: 1 }}>
+          <View style={{ backgroundColor: '#516BEB', borderwith: 1, height: 40, width: 120, borderBottomRightRadius: 50, borderTopRightRadius: 50 }}>
+            <Text style={{ marginLeft: 25, fontSize: 25, fontWeight: 'bold', color: 'white' }}>Join</Text>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <Text style={{ marginTop: 20, marginLeft: 5, width: 250, height: 100, fontSize: 20 }}>
+                Hasil Pelatihan
+              </Text>
+              <View style={{ marginTop: 20, marginLeft: 50 }} >
+                <AntDesign name="caretright" size={30} color="black" />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      {/* bagian koding bawah footer */}
+      <View style={{ height: 54, flexDirection: 'row', backgroundColor: '#516BEB', borderTopRightRadius: 40, borderTopLeftRadius: 40 }}>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text style={{ fontSize: 37, color: '#516BEB', marginBottom: 5, fontWeight: 'bold' }}>Masuk.</Text>
-          <Text style={{ fontSize: 10, color: '#516BEB', marginBottom: 1 }}>Selamat datang kembali ! Masuk</Text>
-          <Text style={{ fontSize: 10, color: '#516BEB', marginBottom: 1 }}>untuk melanjutkan ke HRIS</Text>
-
-          <View style={{ flexDirection: 'row', marginBottom: 5 }}>
-            <View style={{ position: 'relative', flex: 1 }}>
-              <TextInput placeholder='Server' style={{ borderWidth: 1, borderColor: '#D0D7FC', borderRadius: 25, height: 40, fontSize: 13, paddingLeft: 20, paddingRight: 250, backgroundColor: 'white' }}></TextInput>
-            </View>
-          </View>
-          <View style={{ flexDirection: 'row', marginBottom: 5 }}>
-            <View style={{ position: 'relative', flex: 1 }}>
-              <TextInput placeholder='Email' style={{ borderWidth: 1, borderColor: '#D0D7FC', borderRadius: 25, height: 40, fontSize: 13, paddingLeft: 20, paddingRight: 250, backgroundColor: 'white' }}></TextInput>
-            </View>
-          </View>
-          <View style={{ flexDirection: 'row', marginBottom: 5 }}>
-            <View style={{ position: 'relative', flex: 1 }}>
-              <TextInput placeholder='Password' style={{ borderWidth: 1, borderColor: '#D0D7FC', borderRadius: 25, height: 40, fontSize: 13, paddingLeft: 20, paddingRight: 250, backgroundColor: 'white' }}></TextInput>
-            </View>
-          </View>
-          <View style={{ flexDirection: 'row', marginBottom: 5 }}>
-            <View style={{ position: 'relative', flex: 1, alignItems: 'center', alignContent: 'center' }}>
-              <TouchableOpacity style={{backgroundColor: '#516BEB', paddingVertical: 13, borderwith: 10, borderRadius: 15, height: 48, width: 204}}>
-                <Text style={{marginLeft: 76, fontSize: 16, fontWeight: 'normal', color: 'white'}}>MASUK</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            <FontAwesome name="home" size={24} color="white" />
+            {/* <Image style={{ width: 26, height: 26 }} source={require('./icon/test.png')} /> */}
+          </TouchableOpacity>
+          <Text style={{ fontSize: 10, color: 'white', marginTop: 4, }}>Home</Text>
+        </View>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            <Octicons name="checklist" size={24} color="white" />
+            {/* <Image source={require('./icon/test.png')} /> */}
+          </TouchableOpacity>
+          <Text style={{ fontSize: 10, color: 'white', marginTop: 4 }}>Checklist</Text>
+        </View>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            <Entypo name="help" size={24} color="white" />
+            {/* <Image source={require('./icon/test.png')} /> */}
+          </TouchableOpacity>
+          <Text style={{ fontSize: 10, color: 'white', marginTop: 4 }}>Info</Text>
+        </View>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            {/* <Image source={require('./icon/test.png')} /> */}
+            <MaterialIcons name="account-circle" size={24} color='#FF7648' />
+          </TouchableOpacity>
+          <Text style={{ fontSize: 10, color: '#FF7648', marginTop: 4 }}>Account </Text>
         </View>
       </View>
     </View>
