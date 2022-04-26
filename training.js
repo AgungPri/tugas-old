@@ -65,31 +65,47 @@ export default function App() {
           </View>
         </View>
       </View>
+      {/* Bagian Button */}
+      <View style={{ flexDirection: 'row', marginBottom: 260 }}>
+        <View style={{ flex: 1 }}>
+          <View style={{ backgroundColor: '#516BEB', borderwith: 1, height: 40, width: 120, borderBottomRightRadius: 50, borderTopRightRadius: 50 }}>
+            <Text style={{ marginLeft: 25, fontSize: 25, fontWeight: 'bold', color: 'white' }}>Join</Text>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <Text style={{ marginTop: 20, marginLeft: 5, width: 250, height: 100, fontSize: 20 }}>
+                Hasil Pelatihan
+              </Text>
+              <View style={{ marginTop: 20, marginLeft: 50 }} >
+                <AntDesign name="caretright" size={30} color="black" />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
       {/* bagian koding bawah footer */}
-      <View style={{ height: 54, flexDirection: 'row', backgroundColor: 'white' }}>
+      <View style={{ height: 54, flexDirection: 'row', backgroundColor: '#516BEB', borderTopRightRadius: 40, borderTopLeftRadius: 40 }}>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
-            <FontAwesome name="home" size={24} color="black" />
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            <FontAwesome name="home" size={24} color="white" />
             {/* <Image style={{ width: 26, height: 26 }} source={require('./icon/test.png')} /> */}
           </TouchableOpacity>
-          <Text style={{ fontSize: 10, color: '#545454', marginTop: 4, }}>Home</Text>
+          <Text style={{ fontSize: 10, color: 'white', marginTop: 4, }}>Home</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
-            <Octicons name="checklist" size={24} color="black" />
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            <Octicons name="checklist" size={24} color="white" />
             {/* <Image source={require('./icon/test.png')} /> */}
           </TouchableOpacity>
-          <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>Checklist</Text>
+          <Text style={{ fontSize: 10, color: 'white', marginTop: 4 }}>Checklist</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
-            <Entypo name="help" size={24} color="black" />
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
+            <Entypo name="help" size={24} color="white" />
             {/* <Image source={require('./icon/test.png')} /> */}
           </TouchableOpacity>
-          <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>Info</Text>
+          <Text style={{ fontSize: 10, color: 'white', marginTop: 4 }}>Info</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: '#516BEB' }}>
             {/* <Image source={require('./icon/test.png')} /> */}
             <MaterialIcons name="account-circle" size={24} color='#FF7648' />
           </TouchableOpacity>
