@@ -68,31 +68,31 @@ export default function App() {
       {/* bagian koding bawah footer */}
       <View style={{ height: 54, flexDirection: 'row', backgroundColor: 'white' }}>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <View style={{ width: 26, height: 26, backgroundColor: 'white' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
             <FontAwesome name="home" size={24} color="black" />
             {/* <Image style={{ width: 26, height: 26 }} source={require('./icon/test.png')} /> */}
-          </View>
+          </TouchableOpacity>
           <Text style={{ fontSize: 10, color: '#545454', marginTop: 4, }}>Home</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <View style={{ width: 26, height: 26, backgroundColor: 'white' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
             <Octicons name="checklist" size={24} color="black" />
             {/* <Image source={require('./icon/test.png')} /> */}
-          </View>
+          </TouchableOpacity>
           <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>Checklist</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <View style={{ width: 26, height: 26, backgroundColor: 'white' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
             <Entypo name="help" size={24} color="black" />
             {/* <Image source={require('./icon/test.png')} /> */}
-          </View>
+          </TouchableOpacity>
           <Text style={{ fontSize: 10, color: '#545454', marginTop: 4 }}>Info</Text>
         </View>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <View style={{ width: 26, height: 26, backgroundColor: 'white' }}>
+          <TouchableOpacity style={{ width: 26, height: 26, backgroundColor: 'white' }}>
             {/* <Image source={require('./icon/test.png')} /> */}
             <MaterialIcons name="account-circle" size={24} color='#FF7648' />
-          </View>
+          </TouchableOpacity>
           <Text style={{ fontSize: 10, color: '#FF7648', marginTop: 4 }}>Account </Text>
         </View>
       </View>
