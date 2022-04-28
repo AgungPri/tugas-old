@@ -1,61 +1,42 @@
-export default function App() {
-  return (
-    <View style={{ flex: 1 }}>
-      {/* search bar */}
-      <View style={{ flex: 1, backgroundColor: 'white', paddingTop: 15 }}>
-        <View style={{ marginLeft: 5, marginTop: 20 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderRightWidth: 100, borderColor: 'white' }}>
-              <Text style={{}}></Text>
-            </View>
-            <TouchableOpacity style={{ flex: 1, backgroundColor: 'blue', alignItems: 'center', justifyContent: 'center', borderBottomLeftRadius: 15, borderTopLeftRadius: 15 }}>
-              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#516BEB', color: 'white' }}>Kembali</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-        <View style={{ flexDirection: 'row', marginBottom: 5 }}>
-          <View style={{ flex: 1 }}>
-            <View style={{ backgroundColor: '#516BEB', paddingVertical: 7, borderwith: 1, height: 55, width: 150, marginRight: 10, borderBottomRightRadius: 15, borderTopRightRadius: 15 }}>
-              <Text style={{ marginLeft: 40, fontSize: 25, fontWeight: 'bold', color: 'white' }}>Payroll</Text>
-            </View>
-          </View>
-        </View>
-        {/* Program Pelatihan */}
-        <View style={{ marginLeft: 16, marginTop: 40 }}>
-          <Text style={{ fontSize: 13, fontWeight: 'normal' }}>Nama</Text>
-          <View>
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>Kevin Krisma</Text>
-          </View>
-        </View>
-        <View style={{ marginLeft: 16, marginTop: 40 }}>
-          <Text style={{ fontSize: 13, fontWeight: 'normal' }}>NoRekening</Text>
-          <View>
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>7389462784</Text>
-          </View>
-        </View>
-        <View style={{ marginLeft: 16, marginTop: 40 }}>
-          <Text style={{ fontSize: 13, fontWeight: 'normal' }}>Bank</Text>
-          <View>
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>BCA</Text>
-          </View>
-        </View>
-        <View style={{ marginLeft: 16, marginTop: 40 }}>
-          <Text style={{ fontSize: 13, fontWeight: 'normal' }}>BPJS Kesehatan</Text>
-          <View>
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>09845927548</Text>
-          </View>
-        </View>
-        <View style={{ marginLeft: 16, marginTop: 40 }}>
-          <Text style={{ fontSize: 13, fontWeight: 'normal' }}>BPJS Ketenagakerjaan</Text>
-          <View>
-            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>8234959275948</Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  );
+import React, { Component } from 'react'
+import { Text, View } from 'react-native'
+import { MaterialIcons, MaterialCommunityIcons, Ionicons, FontAwesome, AntDesign, Entypo, EvilIcons, Octicons } from '@expo/vector-icons';
+import MaintenanceScreen from '../../../Molecule/MaintenanceScreen'
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
+export default class SalarySlipScreen extends Component {
+    render() {
+        return (
+            <View style={{ flex: 1, marginBottom: 20 }}>
+                <View style={{ flexDirection: 'row' }}>
+                    <Text style={{ flex: 1, fontFamily: "Medium", fontSize: 20, color: 'white', paddingLeft: 20, paddingHorizontal: 10, backgroundColor: '#516BEB', marginTop: 46, marginLeft: 1, height: 50, marginRight: 130, paddingVertical: 10, borderTopRightRadius: 15, borderBottomRightRadius: 15 }}>Payroll</Text>
+                    <View style={{fontFamily: "Medium", backgroundColor: '#516BEB', borderRadius: 15, height: 40, color: '#FFFFFF', marginTop: 50, alignContent: 'center', justifyContent: 'center', alignItems: 'center', marginHorizontal: 10, padding:10 }}>
+                        <Text style={{ fontFamily: "Medium", color: "#FFFFFF"}}>Kembali</Text>
+                    </View>
+                </View>
+                <View style={{ backgroundColor: '#FFFFFE', flex: 1, marginTop: 5, borderRadius: 20, marginRight: 15, marginLeft: 15 }}>
+                    <View style={{ marginTop: 10 }}>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 11, color: '#2C3333', paddingLeft: 7 }}>Nama</Text>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 15, color: '#2C3333', paddingLeft: 7, fontWeight: 'bold' }}>Agung Priyatna</Text>
+                    </View>
+                    <View style={{ marginTop: 5 }}>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 11, color: '#2C3333', paddingLeft: 7 }}>No Rekening</Text>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 15, color: '#2C3333', paddingLeft: 7, fontWeight: 'bold' }}>7389462784</Text>
+                    </View>
+                    <View style={{ marginTop: 5 }}>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 11, color: '#2C3333', paddingLeft: 7 }}>Bank</Text>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 15, color: '#2C3333', paddingLeft: 7, fontWeight: 'bold' }}>BCA</Text>
+                    </View>
+                    <View style={{ marginTop: 5 }}>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 11, color: '#2C3333', paddingLeft: 7 }}>BPJS Kesehatan</Text>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 15, color: '#2C3333', paddingLeft: 7, fontWeight: 'bold' }}>0984592753949</Text>
+                    </View>
+                    <View style={{ marginTop: 5 }}>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 11, color: '#2C3333', paddingLeft: 7 }}>BPJS Ketenagakerjaan</Text>
+                        <Text style={{ fontFamily: 'Medium', fontSize: 15, color: '#2C3333', paddingLeft: 7, fontWeight: 'bold' }}>8234959275948</Text>
+                    </View>
+                </View>
+            </View>
+        )
+    }
 }
-
-const style = StyleSheet.create({
-});
